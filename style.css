@@ -1,0 +1,159 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CARD / RATINGS  */
+
+
+/* container */
+
+.container {
+    align-items: center;
+    background-color: hsl(213, 23%, 23%);
+    border-radius: 50%;
+    cursor: var(--cursor);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    width: 50px;
+}
+
+.container:hover {
+    background: var(--Medium-Grey);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:active {
+    background-color: var(--Orange);
+}
+
+
+/* ratings */
+
+.rating__digit {
+    align-self: center;
+    color: var(--Light-Grey);
+    cursor: var(--cursor);
+}
+
+.rating__digit:hover {
+    color: var(--White);
+    transition: color 0.15s ease-in-out;
+}
+
+.card__ratings {
+    display: flex;
+}
+
+
+/* BUTTON */
+
+.btn {
+    width: 100%;
+    border-radius: 30px;
+    cursor: var(--cursor);
+}
+
+.btn-primary {
+    background-color: var(--Orange);
+    color: var(--White);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    background-color: var(--Dark-Blue);
+    color: var(--Orange);
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background: var(--White);
+    color: var(--Orange);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* CARD */
+
+.card {
+    background-color: var(--Dark-Blue);
+    border-radius: 30px;
+    margin: 3rem 2rem;
+    padding-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.card__heading {
+    color: var(--White);
+}
+
+.card__text {
+    color: var(--Light-Grey);
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        /* height: 100px; */
+        margin: 9rem auto;
+        width: 500px;
+        /*check back on this* check if the second card collapse later */
+    }
+}
+
+.hideit {
+    display: none;
+}
+
+.minus:hover {
+    background-color: hsl(213, 23%, 23%);
+}
+
+
+/* @card2 */
+
+#card2 .card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.card__image {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#card2 .btn-secondary {
+    background-color: hsl(213, 23%, 23%);
+}
+
+#card2 .btn {
+    padding: 0.5rem;
+    width: 220px;
+}
