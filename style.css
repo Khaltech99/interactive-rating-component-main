@@ -45,7 +45,7 @@ body {
 }
 
 .container:focus {
-    background-color: var(--Orange);
+    background: var(--Orange);
 }
 
 
