@@ -32,19 +32,26 @@ body {
     border-radius: 50%;
     cursor: var(--cursor);
     display: flex;
-    height: 50px;
+    height: 2.5rem;
     justify-content: center;
     margin-bottom: 1.5rem;
     margin-right: 1rem;
-    width: 50px;
+    width: 2.5rem;
 }
 
 .container:hover {
-    background: var(--Medium-Grey);
+    background-color: var(--Orange);
     transition: all 0.3s ease-in-out;
 }
 
-.container:focus {
+@media screen and (min-width:768px) {
+    .container:hover {
+        background: var(--Light-Grey);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.container:active {
     background: var(--Orange);
 }
 
@@ -55,6 +62,7 @@ body {
     align-self: center;
     color: var(--Light-Grey);
     cursor: var(--cursor);
+    font-size: 1rem;
 }
 
 .rating__digit:hover {
@@ -102,9 +110,9 @@ body {
 .card {
     background-color: var(--Dark-Blue);
     border-radius: 30px;
-    margin: 3rem 2rem;
+    margin: 3rem 1rem;
     padding-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .card__heading {
